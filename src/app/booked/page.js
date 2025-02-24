@@ -18,7 +18,7 @@ const page = () => {
           </h1>
 
           <div className='flex justify-center'>
-            <Image src="/car_toy.gif" alt="gif"width={200} height={200}/>
+            <Image src="/cartoon-car-icon.webp" alt="gif"width={200} height={200}/>
           </div>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -27,13 +27,6 @@ const page = () => {
               href="/chat"
             >
               Chat with Driver
-            </a>
-
-            <a
-              className="block w-full rounded-sm border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:ring-3 focus:outline-hidden sm:w-auto"
-              href="/"
-            >
-              Continue Booking
             </a>
           </div>
         </div>
