@@ -1,9 +1,12 @@
+"use client"
 import { PaymentElement, useElements, useStripe } from '@stripe/react-stripe-js'
 import React from 'react'
+import { useRouter } from 'next/navigation';
 
 const CheckoutForm = ({amount}) => {
     const stripe=useStripe();
     const elements=useElements();
+    const router=useRouter();
 
     const handleSubmit=async(e)=>{
         e.preventDefault();
@@ -19,7 +22,7 @@ const CheckoutForm = ({amount}) => {
             clientSecret: secretKey,
             elements,
             confirmParams:{
-                return_url: "http://localhost:3000/booked"
+                return_url: "https://car-sharing-app-iota.vercel.app/booked"
             }
         })
     }
