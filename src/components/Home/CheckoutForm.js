@@ -22,7 +22,7 @@ const CheckoutForm = ({amount}) => {
             clientSecret: secretKey,
             elements,
             confirmParams:{
-                return_url: "https://car-sharing-app-iota.vercel.app/booked"
+                return_url: "https://car-sharing-app-bmcw.vercel.app/booked"
             }
         })
     }
